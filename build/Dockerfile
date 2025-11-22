@@ -48,7 +48,7 @@ RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/' /etc/apt/sources.lis
         libdrm2 \
         libx264-164 \
         libyuv0 \
-        nano \
+        vim \
         unzip \
     && case ${TARGETARCH} in \
         amd64) \
