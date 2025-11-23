@@ -46,8 +46,6 @@ RUN \
 		python-aiohttp \
 		python-aiofiles \
 		python-async-lru \
-		python-passlib \
-		python-bcrypt \
 		python-pyotp \
 		python-qrcode \
 		python-pyserial \
@@ -81,7 +79,7 @@ RUN \
 		npm \
 		shellcheck \
 	&& :
-
+		
 COPY testenv/requirements.txt requirements.txt
 RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple \
 	&& pip install --break-system-packages -r requirements.txt \

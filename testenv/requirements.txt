@@ -8,3 +8,5 @@ types-aiofiles
 luma.oled
 pyfatfs
 gpiod>=2.3
+passlib<1.8
+bcrypt<4.0

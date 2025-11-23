@@ -51,6 +51,7 @@ all:
 
 testenv:
 	$(DOCKER) build \
+			--network host \
 			$(if $(call optbool,$(NC)),--no-cache,) \
 			--rm \
 			--tag $(TESTENV_IMAGE) \
